@@ -19,6 +19,17 @@ export const questions: Question[] = [
   { id: 'c13', type: 'truth', text: 'What do you think is our greatest strength as a couple?', category: 'Romantic', difficulty: 'medium', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
   { id: 'c14', type: 'dare', text: 'Dance with [Partner] with no music playing for 1 minute.', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
   { id: 'c15', type: 'truth', text: 'What is the most physically attractive thing about me?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c16', type: 'truth', text: 'What is the most vulnerable you’ve ever felt with me?', category: 'Deep Conversations', difficulty: 'hard', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c17', type: 'truth', text: 'What is a goal we should set together for the next year?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c18', type: 'truth', text: 'What did you think of me after our first date?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c19', type: 'truth', text: 'What is the most adventurous thing you want us to try?', category: 'Romantic', difficulty: 'medium', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c20', type: 'truth', text: 'If you had to describe our relationship as a movie, which genre would it be and why?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c21', type: 'dare', text: 'Plan our next date night entirely right now and tell me the itinerary.', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c22', type: 'truth', text: 'What’s a quirk of mine that you pretend annoys you but you actually secretly love?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c23', type: 'dare', text: 'Write a quick 4-line romantic poem about [Partner] and recite it.', category: 'Romantic', difficulty: 'medium', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c24', type: 'truth', text: 'What was your first impression of my family or friends?', category: 'Deep Conversations', difficulty: 'medium', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c25', type: 'dare', text: 'Stare into [Partner]\'s eyes and list 5 things you admire about them without looking away.', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'c26', type: 'truth', text: 'If we could relive one day of our relationship, which day would you choose?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
 
   // ==========================================
   // ADULTS & WILD (18+)
@@ -38,6 +49,13 @@ export const questions: Question[] = [
   { id: 'a13', type: 'truth', text: 'What is a hard limit for you in the bedroom?', category: 'Adults', difficulty: 'medium', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
   { id: 'a14', type: 'dare', text: 'Trace the outline of [RightPlayer]\'s lips with your finger.', category: 'Adults', difficulty: 'bold', minPlayers: 3, maxPlayers: 99, targetType: 'rightPlayer', relationshipModes: ['Party', 'Couple'] },
   { id: 'a15', type: 'truth', text: 'What is the most inappropriate time you have ever felt aroused?', category: 'Adults', difficulty: 'bold', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Couple', 'Friends', 'Party'] },
+  { id: 'a16', type: 'truth', text: 'What part of my body do you fantasize about most?', category: 'Adults', difficulty: 'wild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'a17', type: 'dare', text: 'Send a risqué text message to [Partner] right now while sitting across from them.', category: 'Adults', difficulty: 'wild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
+  { id: 'a18', type: 'truth', text: 'Have you ever had a crush on a friend’s partner?', category: 'Adults', difficulty: 'bold', minPlayers: 3, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Party'] },
+  { id: 'a19', type: 'dare', text: 'Slowly unbutton or unzip one piece of clothing while making unbroken eye contact with [RandomPlayer].', category: 'Adults', difficulty: 'wild', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Party', 'Couple'] },
+  { id: 'a20', type: 'truth', text: 'What is the strangest place you’ve ever hooked up?', category: 'Adults', difficulty: 'bold', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Couple', 'Friends', 'Party'] },
+  { id: 'a21', type: 'dare', text: 'Give [RightPlayer] a gentle, lingering kiss on the inner wrist.', category: 'Adults', difficulty: 'wild', minPlayers: 3, maxPlayers: 99, targetType: 'rightPlayer', relationshipModes: ['Party', 'Couple'] },
+  { id: 'a22', type: 'truth', text: 'Have you ever fake-moaned just to get it over with?', category: 'Adults', difficulty: 'wild', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Couple', 'Friends', 'Party'] },
 
   // ==========================================
   // FUNNY & EMBARRASSING (Friends / Party / Family)
@@ -58,7 +76,11 @@ export const questions: Question[] = [
   { id: 'f14', type: 'dare', text: 'Show the room the last photo you took on your phone.', category: 'Funny', difficulty: 'hard', minPlayers: 3, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Party'] },
   { id: 'f15', type: 'truth', text: 'What is a ridiculous fear you still have as an adult?', category: 'Funny', difficulty: 'easy', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Couple', 'Friends', 'Family', 'Party'] },
   { id: 'f16', type: 'dare', text: 'Walk across the room like a runway model.', category: 'Funny', difficulty: 'easy', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Party', 'Family'] },
-  
+  { id: 'f17', type: 'dare', text: 'Smell [RightPlayer]\'s shoe and describe the aroma in vivid detail.', category: 'Funny', difficulty: 'hard', minPlayers: 3, maxPlayers: 99, targetType: 'rightPlayer', relationshipModes: ['Friends', 'Party'] },
+  { id: 'f18', type: 'truth', text: 'What’s the most embarrassing thing your parents have caught you doing?', category: 'Funny', difficulty: 'medium', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Party', 'Couple'] },
+  { id: 'f19', type: 'dare', text: 'Let [LeftPlayer] tweet or post something embarrassing from your account.', category: 'Party', difficulty: 'extreme', minPlayers: 3, maxPlayers: 99, targetType: 'leftPlayer', relationshipModes: ['Party', 'Friends'] },
+  { id: 'f20', type: 'truth', text: 'Have you ever stalked an ex’s new partner on social media?', category: 'Funny', difficulty: 'medium', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Party', 'Couple'] },
+
   // ==========================================
   // FRIENDS & DEEP CONVERSATIONS (3+ Players)
   // ==========================================
@@ -73,6 +95,9 @@ export const questions: Question[] = [
   { id: 'fr9', type: 'dare', text: 'You must hold hands with [RightPlayer] for the next 3 rounds.', category: 'Friends', difficulty: 'medium', minPlayers: 3, maxPlayers: 99, targetType: 'rightPlayer', relationshipModes: ['Friends', 'Party'] },
   { id: 'fr10', type: 'truth', text: 'What is the most hurtful thing someone in this room has ever said to you (that you’ve forgiven them for)?', category: 'Deep Conversations', difficulty: 'extreme', minPlayers: 3, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Couple'] },
   { id: 'fr11', type: 'dare', text: 'Let [Host] draw something on your face with a pen or marker.', category: 'Friends', difficulty: 'hard', minPlayers: 3, maxPlayers: 99, targetType: 'host', relationshipModes: ['Friends', 'Party'] },
+  { id: 'fr12', type: 'truth', text: 'Which of your friends do you think is a bad influence?', category: 'Deep Conversations', difficulty: 'hard', minPlayers: 3, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Party'] },
+  { id: 'fr13', type: 'truth', text: 'Have you ever secretly disliked a partner of someone in this room?', category: 'Deep Conversations', difficulty: 'extreme', minPlayers: 3, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Party'] },
+  { id: 'fr14', type: 'dare', text: 'Allow [RandomPlayer] to look through your search history for 30 seconds.', category: 'Friends', difficulty: 'extreme', minPlayers: 3, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Friends', 'Party'] },
 
   // ==========================================
   // MINIGAMES & GROUP ACTIONS (4+ Players)
@@ -84,6 +109,9 @@ export const questions: Question[] = [
   { id: 'm5', type: 'dare', text: '[RandomGroup] Must swap seats with each other without touching the floor.', category: 'Party', difficulty: 'medium', minPlayers: 4, maxPlayers: 99, targetType: 'randomGroup', relationshipModes: ['Friends', 'Party', 'Family'] },
   { id: 'm6', type: 'minigame', text: 'Never Have I Ever: [CurrentPlayer] says something they\'ve never done. Anyone who HAS done it must raise their hand.', category: 'Party', difficulty: 'easy', minPlayers: 3, maxPlayers: 99, targetType: 'everyone', relationshipModes: ['Friends', 'Party', 'Couple'] },
   { id: 'm7', type: 'minigame', text: 'Thumb Master: [CurrentPlayer] is now the thumb master. Whenever they place their thumb on the table, the last person to do so loses.', category: 'Party', difficulty: 'medium', minPlayers: 4, maxPlayers: 99, targetType: 'everyone', relationshipModes: ['Friends', 'Party'] },
+  { id: 'm8', type: 'minigame', text: '[Everyone] Point to the person who is the worst driver in this room.', category: 'Party', difficulty: 'easy', minPlayers: 4, maxPlayers: 99, targetType: 'group', relationshipModes: ['Friends', 'Party', 'Family'] },
+  { id: 'm9', type: 'minigame', text: 'Rhyme Time! [CurrentPlayer] says a word. Go around in a circle rhyming with it. First to fail loses.', category: 'Party', difficulty: 'easy', minPlayers: 3, maxPlayers: 99, targetType: 'everyone', relationshipModes: ['Friends', 'Party', 'Family'] },
+  { id: 'm10', type: 'minigame', text: '[Everyone] Close your eyes. On the count of 3, point to who you think has the highest body count. Open eyes!', category: 'Adults', difficulty: 'bold', minPlayers: 4, maxPlayers: 99, targetType: 'group', relationshipModes: ['Friends', 'Party'] },
 
   // ==========================================
   // EXPANDED EASY (Family & Friends)
@@ -96,6 +124,10 @@ export const questions: Question[] = [
   { id: 'e6', type: 'dare', text: 'Do 10 jumping jacks while saying the alphabet backwards.', category: 'Family', difficulty: 'medium', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Family', 'Friends', 'Party'] },
   { id: 'e7', type: 'truth', text: 'What was your favorite childhood cartoon?', category: 'Family', difficulty: 'easy', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Family', 'Friends'] },
   { id: 'e8', type: 'dare', text: 'Let [RightPlayer] draw a mustache on you using an app filter or a pen.', category: 'Family', difficulty: 'medium', minPlayers: 3, maxPlayers: 99, targetType: 'rightPlayer', relationshipModes: ['Family', 'Friends', 'Party'] },
+  { id: 'e9', type: 'truth', text: 'What is the most trouble you ever got into as a kid?', category: 'Family', difficulty: 'easy', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Family', 'Friends', 'Party'] },
+  { id: 'e10', type: 'dare', text: 'Balance a spoon on your nose for 10 seconds.', category: 'Family', difficulty: 'easy', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Family', 'Friends'] },
+  { id: 'e11', type: 'truth', text: 'If you had a time machine, would you go to the past or the future?', category: 'Family', difficulty: 'easy', minPlayers: 2, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Family', 'Friends', 'Couple'] },
+  { id: 'e12', type: 'dare', text: 'Let [LeftPlayer] tickle you for 10 seconds.', category: 'Family', difficulty: 'medium', minPlayers: 3, maxPlayers: 99, targetType: 'leftPlayer', relationshipModes: ['Family', 'Friends'] },
 
   // ==========================================
   // MORE WILD PARTY DARES (Party)
@@ -105,16 +137,9 @@ export const questions: Question[] = [
   { id: 'wp3', type: 'dare', text: 'You must communicate only in animal noises for the next 3 rounds.', category: 'Party', difficulty: 'hard', minPlayers: 3, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Party', 'Friends'] },
   { id: 'wp4', type: 'dare', text: 'Let [LeftPlayer] post a status update on your social media.', category: 'Party', difficulty: 'extreme', minPlayers: 3, maxPlayers: 99, targetType: 'leftPlayer', relationshipModes: ['Party', 'Friends'] },
   { id: 'wp5', type: 'dare', text: 'Trade a piece of clothing with [RandomPlayer].', category: 'Party', difficulty: 'hard', minPlayers: 3, maxPlayers: 99, targetType: 'randomPair', relationshipModes: ['Party'] },
+  { id: 'wp6', type: 'dare', text: 'Eat a spoonful of a condiment chosen by [Host].', category: 'Party', difficulty: 'hard', minPlayers: 3, maxPlayers: 99, targetType: 'host', relationshipModes: ['Party', 'Friends'] },
+  { id: 'wp7', type: 'dare', text: 'Show everyone your Screen Time report on your phone right now.', category: 'Party', difficulty: 'medium', minPlayers: 3, maxPlayers: 99, targetType: 'singlePlayer', relationshipModes: ['Party', 'Friends', 'Family'] },
   
-  // ==========================================
-  // MORE COUPLES TRUTHS
-  // ==========================================
-  { id: 'c16', type: 'truth', text: 'What is the most vulnerable you’ve ever felt with me?', category: 'Deep Conversations', difficulty: 'hard', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
-  { id: 'c17', type: 'truth', text: 'What is a goal we should set together for the next year?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
-  { id: 'c18', type: 'truth', text: 'What did you think of me after our first date?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
-  { id: 'c19', type: 'truth', text: 'What is the most adventurous thing you want us to try?', category: 'Romantic', difficulty: 'medium', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
-  { id: 'c20', type: 'truth', text: 'If you had to describe our relationship as a movie, which genre would it be and why?', category: 'Romantic', difficulty: 'mild', minPlayers: 2, maxPlayers: 2, targetType: 'singlePlayer', relationshipModes: ['Couple'] },
-
   // ==========================================
   // FINAL ROUND (ANY MODE)
   // ==========================================

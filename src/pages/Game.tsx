@@ -57,26 +57,39 @@ export function Game() {
   const canControl = isOnlineMode ? (currentPlayer.id === localPlayerId) : true;
 
   const availableQuestions = useMemo(() => {
-    let filtered = filterQuestions(questions, players.length, relationshipMode || null, usedQuestionIds);
+    let filtered = filterQuestions(questions, players.length, relationshipMode || null, []);
     if (currentMode === 'Adults (18+)') filtered = filtered.filter(q => q.category === 'Adults' || q.category === 'Flirty');
     else if (currentMode === 'Couples') filtered = filtered.filter(q => q.category === 'Couples' || q.category === 'Romantic');
     else if (currentMode === 'Funny') filtered = filtered.filter(q => q.category === 'Funny' || q.category === 'Embarrassing');
     
     if (filtered.length === 0) filtered = questions.filter(q => q.minPlayers <= players.length && q.maxPlayers >= players.length);
     return filtered;
-  }, [currentMode, relationshipMode, players.length, usedQuestionIds]);
+  }, [currentMode, relationshipMode, players.length]);
 
   const drawQuestion = async (type: QuestionType | 'random' | 'group') => {
     if (!canControl) return;
     
-    let pool = availableQuestions;
+    // 1. Filter the master available pool by the requested type
+    let poolByType = availableQuestions;
     if (type !== 'random') {
-      if (type === 'group') pool = pool.filter(q => q.targetType === 'everyone' || q.targetType === 'group');
-      else pool = pool.filter(q => q.type === type && q.targetType !== 'group');
+      if (type === 'group') poolByType = poolByType.filter(q => q.targetType === 'everyone' || q.targetType === 'group');
+      else poolByType = poolByType.filter(q => q.type === type && q.targetType !== 'group');
     }
-    if (pool.length === 0) pool = availableQuestions;
+    
+    // Fallback if the requested type simply doesn't exist in the current mode
+    if (poolByType.length === 0) poolByType = availableQuestions;
 
-    const randomQ = pool[Math.floor(Math.random() * pool.length)];
+    // 2. Filter out used questions
+    let freshPool = poolByType.filter(q => !usedQuestionIds.includes(q.id));
+    
+    // 3. If we exhausted all fresh questions of this type, reset the pool for this type
+    if (freshPool.length === 0) {
+       freshPool = poolByType; 
+    }
+
+    // 4. Randomize thoroughly
+    const shuffledPool = [...freshPool].sort(() => 0.5 - Math.random());
+    const randomQ = shuffledPool[Math.floor(Math.random() * shuffledPool.length)];
     if (randomQ) {
       if (isOnlineMode && roomId) {
         await updateRoomState(roomId, {
