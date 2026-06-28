@@ -21,6 +21,7 @@ export type Category =
   | 'Embarrassing'
   | 'Party'
   | 'Friends'
+  | 'Family'
   | 'Couples'
   | 'Adults'
   | 'Flirty'
