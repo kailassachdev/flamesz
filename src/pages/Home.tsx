@@ -34,11 +34,18 @@ export function Home() {
       </header>
 
       {/* Main Title */}
-      <div className="text-center z-10 mb-16">
-        <h1 className="text-6xl md:text-8xl font-bold mb-4 text-gradient tracking-tight">
-          Flame ❤️
-        </h1>
-        <p className="text-xl md:text-2xl text-white/80 font-light">
+      <div className="text-center z-10 mb-16 flex flex-col items-center">
+        <div className="flex flex-col items-center justify-center gap-6 mb-4">
+          <img 
+            src="/homeimage.png" 
+            alt="Flame Home Logo" 
+            className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-3xl shadow-2xl shadow-pink-500/20 border-2 border-white/10" 
+          />
+          <h1 className="text-6xl md:text-8xl font-bold text-gradient tracking-tight">
+            Flame ❤️
+          </h1>
+        </div>
+        <p className="text-xl md:text-2xl text-white/80 font-light mt-2">
           Create unforgettable moments.
         </p>
       </div>
