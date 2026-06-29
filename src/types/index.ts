@@ -27,6 +27,7 @@ export type Category =
   | 'Flirty'
   | 'Deep Conversations'
   | 'Ice Breakers'
+  | 'Very Hot'
   | 'Late Night';
 
 export type GameMode = 
@@ -36,6 +37,7 @@ export type GameMode =
   | 'Couples'
   | 'Friends'
   | 'Party'
+  | 'Very Hot'
   | 'Adults (18+)';
 
 export type RelationshipMode = 'Couple' | 'Friends' | 'Family' | 'Party';

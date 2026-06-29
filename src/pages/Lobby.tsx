@@ -149,7 +149,8 @@ export function Lobby() {
     { id: 'Easy', icon: <Dice5 className="w-4 h-4 text-blue-400" />, label: 'Easy' },
     { id: 'Funny', icon: <GlassWater className="w-4 h-4 text-yellow-400" />, label: 'Funny' },
     { id: 'Romantic', icon: <Heart className="w-4 h-4 text-pink-400" />, label: 'Romantic' },
-    { id: 'Adults (18+)', icon: <Flame className="w-4 h-4 text-red-500" />, label: 'Adults' }
+    { id: 'Adults (18+)', icon: <Flame className="w-4 h-4 text-red-500" />, label: 'Adults' },
+    { id: 'Very Hot', icon: <Flame className="w-4 h-4 text-orange-500" />, label: 'Very Hot' }
   ];
 
   return (

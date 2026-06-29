@@ -42,11 +42,12 @@ export function Setup() {
     { id: 'Party', icon: <Sparkles className="w-5 h-5" />, label: 'Party 🍻' },
   ];
 
-  const gameModes: { id: GameMode; icon: React.ReactNode; label: string }[] = [
+  const gameModes: { id: GameMode; icon: React.ReactNode; label: string; desc?: string }[] = [
     { id: 'Easy', icon: <Dice5 className="w-5 h-5 text-blue-400" />, label: 'Easy' },
     { id: 'Funny', icon: <GlassWater className="w-5 h-5 text-yellow-400" />, label: 'Funny' },
-    { id: 'Romantic', icon: <Heart className="w-5 h-5 text-pink-400" />, label: 'Romantic' },
-    { id: 'Adults (18+)', icon: <Flame className="w-5 h-5 text-red-500" />, label: 'Adults (18+)' }
+    { id: 'Romantic', icon: <Heart className="w-5 h-5 text-pink-400" />, label: 'Romantic', desc: 'Meaningful connection' },
+    { id: 'Adults (18+)', icon: <Flame className="w-5 h-5 text-red-500" />, label: 'Adults (18+)', desc: 'Spicy & bold' },
+    { id: 'Very Hot', icon: <Flame className="w-5 h-5 text-orange-500" />, label: 'Very Hot', desc: 'Extremely spicy' }
   ];
 
   return (

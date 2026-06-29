@@ -59,6 +59,7 @@ export function Game() {
   const availableQuestions = useMemo(() => {
     let filtered = filterQuestions(questions, players.length, relationshipMode || null, []);
     if (currentMode === 'Adults (18+)') filtered = filtered.filter(q => q.category === 'Adults' || q.category === 'Flirty');
+    else if (currentMode === 'Very Hot') filtered = filtered.filter(q => q.category === 'Very Hot' || q.category === 'Adults');
     else if (currentMode === 'Couples') filtered = filtered.filter(q => q.category === 'Couples' || q.category === 'Romantic');
     else if (currentMode === 'Funny') filtered = filtered.filter(q => q.category === 'Funny' || q.category === 'Embarrassing');
     
